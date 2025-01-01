@@ -1,12 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./src/**/*.{js,jsx}", // This will include all .js and .jsx files in src and any subdirectories
+    './index.html',
+    './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [],
 };
